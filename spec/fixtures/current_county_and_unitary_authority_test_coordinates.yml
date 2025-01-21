@@ -1,0 +1,652 @@
+test_coordinates:
+  - lat: 51.414008700803116
+    lng: -0.7528276347958636
+    expected: "Bracknell Forest"
+  - lat: 51.526037248508494
+    lng: -0.053140390471681946
+    expected: "Tower Hamlets"
+  - lat: 52.41240642468353
+    lng: -1.5114872402651054
+    expected: "Coventry"
+  - lat: 51.48013670334334
+    lng: -0.6174901401594279
+    expected: "Windsor and Maidenhead"
+  - lat: 52.9553683792473
+    lng: -1.155314088416375
+    expected: "Nottingham"
+  - lat: 51.47858106436991
+    lng: -0.0012920920788660238
+    expected: "Greenwich"
+  - lat: 51.557870842087524
+    lng: -1.7809760675838893
+    expected: "Swindon"
+  - lat: 53.577694279420626
+    lng: -2.4313166693550285
+    expected: "Bolton"
+  - lat: 53.81747669728046
+    lng: -3.0317577972504925
+    expected: "Blackpool"
+  - lat: 56.461866435293075
+    lng: -2.9747318831353287
+    expected: "Dundee City"
+  - lat: 51.9527047164574
+    lng: -0.5165177614743477
+    expected: "Central Bedfordshire"
+  - lat: 53.410243168240406
+    lng: -2.160735518970909
+    expected: "Stockport"
+  - lat: 50.56508758520394
+    lng: -3.9478007600738105
+    expected: "Devon"
+  - lat: 52.19177805417608
+    lng: 0.14319215698636098
+    expected: "Cambridgeshire"
+  - lat: 53.48232122734551
+    lng: -2.2566024114165684
+    expected: "Salford"
+  - lat: 51.56154188493928
+    lng: 0.22028234360173315
+    expected: "Havering"
+  - lat: 49.92294949384155
+    lng: -6.298110891294627
+    expected: "Isles of Scilly"
+  - lat: 51.413223369672366
+    lng: -0.1741156159725027
+    expected: "Merton"
+  - lat: 52.62477079958141
+    lng: 1.2814749774117138
+    expected: "Norfolk"
+  - lat: 52.186150959890796
+    lng: 0.9950734048897082
+    expected: "Suffolk"
+  - lat: 50.814087298979544
+    lng: -1.077831820534406
+    expected: "Portsmouth"
+  - lat: 51.65629207843608
+    lng: -3.8033786635944504
+    expected: "Neath Port Talbot"
+  - lat: 53.541439016512726
+    lng: -2.6410898616576497
+    expected: "Wigan"
+  - lat: 51.440357874121915
+    lng: 0.14793235582461442
+    expected: "Bexley"
+  - lat: 54.516553863332156
+    lng: -6.057694392286868
+    expected: "Lisburn and Castlereagh"
+  - lat: 53.281156116007125
+    lng: -3.8298429819956663
+    expected: "Conwy"
+  - lat: 51.44552344974355
+    lng: -1.8578392135132495
+    expected: "Wiltshire"
+  - lat: 53.795412489438455
+    lng: -1.54553259185978
+    expected: "Leeds"
+  - lat: 50.869353534834595
+    lng: 0.025056924479688453
+    expected: "East Sussex"
+  - lat: 55.86713992498659
+    lng: -3.964500564335127
+    expected: "North Lanarkshire"
+  - lat: 51.36078294026382
+    lng: -0.19307982462539697
+    expected: "Sutton"
+  - lat: 53.36051205073626
+    lng: -2.7319793262688394
+    expected: "Halton"
+  - lat: 51.76700705859712
+    lng: -2.850288628595334
+    expected: "Monmouthshire"
+  - lat: 53.43256674458038
+    lng: -2.380108322765558
+    expected: "Trafford"
+  - lat: 53.586596444263165
+    lng: -0.6432928054322489
+    expected: "North Lincolnshire"
+  - lat: 53.441453391090164
+    lng: -2.719883380972374
+    expected: "St. Helens"
+  - lat: 51.57155549721704
+    lng: -3.218555010458521
+    expected: "Caerphilly"
+  - lat: 53.3879536233124
+    lng: -2.5956401089305086
+    expected: "Warrington"
+  - lat: 51.57163726137343
+    lng: -2.441698933930796
+    expected: "South Gloucestershire"
+  - lat: 53.04282829097902
+    lng: -2.993575483901019
+    expected: "Wrexham"
+  - lat: 54.34639598196026
+    lng: -6.634198222711634
+    expected: "Armagh City, Banbridge and Craigavon"
+  - lat: 52.58615009688596
+    lng: -1.9813500272191853
+    expected: "Walsall"
+  - lat: 50.72177762936137
+    lng: -1.8720675806155753
+    expected: "Bournemouth, Christchurch and Poole"
+  - lat: 57.225419358522686
+    lng: -2.6879777731290746
+    expected: "Aberdeenshire"
+  - lat: 51.54211735606274
+    lng: -0.14316492175075932
+    expected: "Camden"
+  - lat: 53.10036201687018
+    lng: -2.449127846602839
+    expected: "Cheshire East"
+  - lat: 54.60127239794164
+    lng: -5.924641672773601
+    expected: "Belfast"
+  - lat: 57.142051632139314
+    lng: -2.1332695702397393
+    expected: "Aberdeen City"
+  - lat: 55.94561170014866
+    lng: -3.2051796599337763
+    expected: "City of Edinburgh"
+  - lat: 54.8863608797511
+    lng: -2.9128760114291157
+    expected: "Cumberland"
+  - lat: 54.66343476485763
+    lng: -2.7501591949107795
+    expected: "Westmorland and Furness"
+  - lat: 53.56700694755924
+    lng: -0.08730471528727037
+    expected: "North East Lincolnshire"
+  - lat: 51.45176401103139
+    lng: -2.594994687674821
+    expected: "Bristol"
+  - lat: 52.63500673942426
+    lng: -1.1321326249016366
+    expected: "Leicester"
+  - lat: 51.5917631360831
+    lng: -0.33477205277987143
+    expected: "Harrow"
+  - lat: 54.592529988098
+    lng: -5.701942778157854
+    expected: "Ards and North Down"
+  - lat: 55.13060786321143
+    lng: -6.660126056357083
+    expected: "Causeway Coast and Glens"
+  - lat: 51.535435121033856
+    lng: 0.034116240080233604
+    expected: "Newham"
+  - lat: 54.96548787173466
+    lng: -1.6062459750644595
+    expected: "Gateshead"
+  - lat: 52.20032694405575
+    lng: -2.203169057768166
+    expected: "Worcestershire"
+  - lat: 53.16578272157973
+    lng: -3.1412201290904043
+    expected: "Flintshire"
+  - lat: 54.646162404430044
+    lng: -6.743804460490418
+    expected: "Mid Ulster"
+  - lat: 51.70176028340195
+    lng: -3.041111480491995
+    expected: "Torfaen"
+  - lat: 55.77069376189776
+    lng: -4.335034448709337
+    expected: "East Renfrewshire"
+  - lat: 58.935313660069745
+    lng: -2.7408269850157776
+    expected: "Orkney Islands"
+  - lat: 53.43173791739294
+    lng: -1.361416658663476
+    expected: "Rotherham"
+  - lat: 50.4731981331994
+    lng: -3.5463659514608725
+    expected: "Torbay"
+  - lat: 50.85781384414305
+    lng: -0.5499680112780497
+    expected: "West Sussex"
+  - lat: 52.23614983661061
+    lng: -0.8978917695750018
+    expected: "West Northamptonshire"
+  - lat: 55.891304482733496
+    lng: -3.5217481624114706
+    expected: "West Lothian"
+  - lat: 51.70357174756135
+    lng: -0.6133346280418225
+    expected: "Buckinghamshire"
+  - lat: 51.055711600125726
+    lng: -1.3076434733643973
+    expected: "Hampshire"
+  - lat: 51.5383817361375
+    lng: 0.10145262286081126
+    expected: "Barking and Dagenham"
+  - lat: 55.732801973937086
+    lng: -6.185228104897568
+    expected: "Argyll and Bute"
+  - lat: 51.50421199642619
+    lng: -3.577087509477021
+    expected: "Bridgend"
+  - lat: 51.497964188007444
+    lng: -0.07315716505284697
+    expected: "Southwark"
+  - lat: 52.80132604761499
+    lng: -2.1518252637559976
+    expected: "Staffordshire"
+  - lat: 56.39189919133144
+    lng: -3.4382663299045904
+    expected: "Perth and Kinross"
+  - lat: 51.613717041331526
+    lng: -3.4129575839022848
+    expected: "Rhondda Cynon Taf"
+  - lat: 52.94483338331034
+    lng: -3.9832501493084482
+    expected: "Gwynedd"
+  - lat: 51.55412324779279
+    lng: -0.24975415975704562
+    expected: "Brent"
+  - lat: 57.478416124274176
+    lng: -4.226179863337078
+    expected: "Highland"
+  - lat: 52.67270343522393
+    lng: -0.7335296427292106
+    expected: "Rutland"
+  - lat: 52.040723462621706
+    lng: -0.761935838058495
+    expected: "Milton Keynes"
+  - lat: 55.330542945217545
+    lng: -1.8831862039228056
+    expected: "Northumberland"
+  - lat: 55.902214679351275
+    lng: -4.703747605609766
+    expected: "Inverclyde"
+  - lat: 57.99072425163721
+    lng: -6.860492728576911
+    expected: "Na h-Eileanan Siar"
+  - lat: 51.54747787848444
+    lng: -0.052371844802102434
+    expected: "Hackney"
+  - lat: 52.67642416014995
+    lng: -2.4650037593907608
+    expected: "Telford and Wrekin"
+  - lat: 53.61031151994862
+    lng: -2.155356095791162
+    expected: "Rochdale"
+  - lat: 53.454772604878116
+    lng: -2.8520193987763114
+    expected: "Knowsley"
+  - lat: 51.748919817023925
+    lng: -3.379665076260296
+    expected: "Merthyr Tydfil"
+  - lat: 52.27845742576369
+    lng: -1.5884467159320355
+    expected: "Warwickshire"
+  - lat: 55.06850482023228
+    lng: -3.5972983090158483
+    expected: "Dumfries and Galloway"
+  - lat: 51.23668746473728
+    lng: -0.5794245388068567
+    expected: "Surrey"
+  - lat: 51.583361365504715
+    lng: -2.996284271635835
+    expected: "Newport"
+  - lat: 56.15388592653388
+    lng: -3.740308937744366
+    expected: "Clackmannanshire"
+  - lat: 51.62119747249539
+    lng: -3.9437913013079258
+    expected: "Swansea"
+  - lat: 52.48212376675976
+    lng: -1.8956303865929804
+    expected: "Birmingham"
+  - lat: 51.460966031996996
+    lng: -3.4402286208249557
+    expected: "Vale of Glamorgan"
+  - lat: 54.530988583728174
+    lng: -1.5545505612204977
+    expected: "Darlington"
+  - lat: 51.56202636865682
+    lng: -0.4418746083820046
+    expected: "Hillingdon"
+  - lat: 52.510335436546264
+    lng: -2.0864738787743153
+    expected: "Dudley"
+  - lat: 52.50419211506441
+    lng: -2.014841790393485
+    expected: "Sandwell"
+  - lat: 51.65265506321814
+    lng: -0.39183418259551533
+    expected: "Hertfordshire"
+  - lat: 53.79124240487203
+    lng: -1.7497525627992743
+    expected: "Bradford"
+  - lat: 52.414177997528355
+    lng: -1.788282483146212
+    expected: "Solihull"
+  - lat: 53.47538049163455
+    lng: -2.241773798751764
+    expected: "Manchester"
+  - lat: 52.97889632205009
+    lng: -0.01231746774505234
+    expected: "Lincolnshire"
+  - lat: 51.418360427207105
+    lng: -0.2887780002278302
+    expected: "Kingston upon Thames"
+  - lat: 53.00792219675048
+    lng: -2.18072059677089
+    expected: "Stoke-on-Trent"
+  - lat: 60.32066102906544
+    lng: -1.2850051485753318
+    expected: "Shetland Islands"
+  - lat: 52.77907276361001
+    lng: -1.1962893946394397
+    expected: "Leicestershire"
+  - lat: 52.91589693915133
+    lng: -1.4632845265534897
+    expected: "Derby"
+  - lat: 51.37784885004573
+    lng: -2.357040845676507
+    expected: "Bath and North East Somerset"
+  - lat: 51.38079670552451
+    lng: 0.5246777168890177
+    expected: "Medway"
+  - lat: 53.76735714638052
+    lng: -0.32752490409202134
+    expected: "City of Kingston upon Hull"
+  - lat: 51.856470182387376
+    lng: -4.288135183972443
+    expected: "Carmarthenshire"
+  - lat: 55.83408489549591
+    lng: -4.50519878290123
+    expected: "Renfrewshire"
+  - lat: 53.63333353705998
+    lng: -1.7689353600089959
+    expected: "Kirklees"
+  - lat: 52.138522998171716
+    lng: -0.46693708398963907
+    expected: "Bedford"
+  - lat: 50.694491806158915
+    lng: -1.2921343977408608
+    expected: "Isle of Wight"
+  - lat: 51.42905172479441
+    lng: -0.16569551597176735
+    expected: "Wandsworth"
+  - lat: 53.684617735606786
+    lng: -1.5021631077874682
+    expected: "Wakefield"
+  - lat: 53.18558568177044
+    lng: -3.4244652996656773
+    expected: "Denbighshire"
+  - lat: 54.9864923670006
+    lng: -1.6164570446377002
+    expected: "Newcastle upon Tyne"
+  - lat: 51.39998723860099
+    lng: -1.3144523207695495
+    expected: "West Berkshire"
+  - lat: 51.536985037856525
+    lng: 0.7119056102584724
+    expected: "Southend-on-Sea"
+  - lat: 52.5867326140918
+    lng: -2.1259383549593225
+    expected: "Wolverhampton"
+  - lat: 55.670212603528284
+    lng: -3.9123276068900323
+    expected: "South Lanarkshire"
+  - lat: 53.477377631932214
+    lng: -2.092270670408492
+    expected: "Tameside"
+  - lat: 51.77714839981362
+    lng: -3.20736255492094
+    expected: "Blaenau Gwent"
+  - lat: 53.30008213451938
+    lng: -1.8005742907398594
+    expected: "Derbyshire"
+  - lat: 55.475297730447494
+    lng: -4.275896533381352
+    expected: "East Ayrshire"
+  - lat: 51.49735366238277
+    lng: -0.17635666864379484
+    expected: "Kensington and Chelsea"
+  - lat: 54.86401914231495
+    lng: -6.282552249995464
+    expected: "Mid and East Antrim"
+  - lat: 54.17436379651813
+    lng: -6.330703509931361
+    expected: "Newry, Mourne and Down"
+  - lat: 52.40115791623016
+    lng: -4.045335186002354
+    expected: "Ceredigion"
+  - lat: 50.747087192920546
+    lng: -2.3514277615237957
+    expected: "Dorset"
+  - lat: 51.51328634613658
+    lng: -0.30574545852737334
+    expected: "Ealing"
+  - lat: 51.748911343111686
+    lng: -1.2755844085514039
+    expected: "Oxfordshire"
+  - lat: 50.377588053864656
+    lng: -4.144110470314219
+    expected: "Plymouth"
+  - lat: 56.07081990591253
+    lng: -3.4449405155856483
+    expected: "Fife"
+  - lat: 51.736268827471925
+    lng: 0.4679546988112601
+    expected: "Essex"
+  - lat: 55.945577124859085
+    lng: -4.5675667438430505
+    expected: "West Dunbartonshire"
+  - lat: 54.9068763823683
+    lng: -1.3835596290376535
+    expected: "Sunderland"
+  - lat: 57.53164263136422
+    lng: -3.1913065951677178
+    expected: "Moray"
+  - lat: 53.540672118181256
+    lng: -2.1095677394441443
+    expected: "Oldham"
+  - lat: 51.47349215926932
+    lng: -0.38609281285471647
+    expected: "Hounslow"
+  - lat: 53.746533626191976
+    lng: -2.4795680264594364
+    expected: "Blackburn with Darwen"
+  - lat: 53.38921746055429
+    lng: -3.012390211098636
+    expected: "Wirral"
+  - lat: 51.88235196786364
+    lng: -0.41351913009204605
+    expected: "Luton"
+  - lat: 51.48194954258935
+    lng: -3.1707232753828567
+    expected: "Cardiff"
+  - lat: 51.40023766193196
+    lng: 0.04509271094233261
+    expected: "Bromley"
+  - lat: 51.53282010563595
+    lng: -0.1057819789542602
+    expected: "Islington"
+  - lat: 54.23139522563855
+    lng: -1.3427998043055476
+    expected: "North Yorkshire"
+  - lat: 53.38346326482641
+    lng: -1.4694701523835874
+    expected: "Sheffield"
+  - lat: 51.499764541276505
+    lng: -0.12719085062730365
+    expected: "Westminster"
+  - lat: 52.573538171754535
+    lng: -0.23944570962233913
+    expected: "Peterborough"
+  - lat: 51.4119786276176
+    lng: -0.8424517787994099
+    expected: "Wokingham"
+  - lat: 54.60920704943682
+    lng: -1.052061793425448
+    expected: "Redcar and Cleveland"
+  - lat: 51.45836482479564
+    lng: -0.9717102808775504
+    expected: "Reading"
+  - lat: 53.25770199905621
+    lng: -4.314369689788113
+    expected: "Isle of Anglesey"
+  - lat: 55.891263665982265
+    lng: -3.0636971682885723
+    expected: "Midlothian"
+  - lat: 55.859084457045384
+    lng: -4.258089853218916
+    expected: "Glasgow City"
+  - lat: 56.64114782239146
+    lng: -2.8856132363585756
+    expected: "Angus"
+  - lat: 51.375053493301145
+    lng: -0.09259005399997831
+    expected: "Croydon"
+  - lat: 53.55431689252829
+    lng: -1.4769497988037232
+    expected: "Barnsley"
+  - lat: 55.56095888190066
+    lng: -5.272013719681593
+    expected: "North Ayrshire"
+  - lat: 51.14373627236434
+    lng: 0.8764808629700748
+    expected: "Kent"
+  - lat: 51.41943976509994
+    lng: -2.7505591691084366
+    expected: "North Somerset"
+  - lat: 51.523568982588976
+    lng: 0.40765511846428704
+    expected: "Thurrock"
+  - lat: 53.8404251521793
+    lng: -0.4238858430532599
+    expected: "East Riding of Yorkshire"
+  - lat: 54.77341852859657
+    lng: -1.5764028311556912
+    expected: "County Durham"
+  - lat: 53.59374920069602
+    lng: -2.2998435797512187
+    expected: "Bury"
+  - lat: 51.65030314094002
+    lng: -0.19389026614346716
+    expected: "Barnet"
+  - lat: 55.94644316519993
+    lng: -4.276649194320177
+    expected: "East Dunbartonshire"
+  - lat: 53.193069148552404
+    lng: -2.8913811772990377
+    expected: "Cheshire West and Chester"
+  - lat: 50.82885064257436
+    lng: -0.1409973257721251
+    expected: "Brighton and Hove"
+  - lat: 56.11987508302968
+    lng: -3.935498152295618
+    expected: "Stirling"
+  - lat: 51.58564837925518
+    lng: 0.08852245751842955
+    expected: "Redbridge"
+  - lat: 51.6522907935123
+    lng: -0.08094372990970564
+    expected: "Enfield"
+  - lat: 53.52237597405595
+    lng: -1.1394072123811858
+    expected: "Doncaster"
+  - lat: 52.70734476364592
+    lng: -2.7546516693006526
+    expected: "Shropshire"
+  - lat: 51.879391519065365
+    lng: -5.2621785295449435
+    expected: "Pembrokeshire"
+  - lat: 51.51189216240826
+    lng: -0.5910819924034019
+    expected: "Slough"
+  - lat: 55.264784803209075
+    lng: -4.767713454345773
+    expected: "South Ayrshire"
+  - lat: 51.58283188160962
+    lng: -0.019871011731608254
+    expected: "Waltham Forest"
+  - lat: 54.99655217840267
+    lng: -7.310939514561652
+    expected: "Derry City and Strabane"
+  - lat: 51.492199821804164
+    lng: -0.2237087323377531
+    expected: "Hammersmith and Fulham"
+  - lat: 54.99753343636974
+    lng: -1.4329470612630661
+    expected: "South Tyneside"
+  - lat: 55.95838588336398
+    lng: -2.7742571290103997
+    expected: "East Lothian"
+  - lat: 51.462991267521794
+    lng: -0.11316616623807099
+    expected: "Lambeth"
+  - lat: 52.06122685236487
+    lng: -2.708621712400442
+    expected: "Herefordshire"
+  - lat: 54.34715162686388
+    lng: -7.643914620330258
+    expected: "Fermanagh and Omagh"
+  - lat: 51.4633323237865
+    lng: -0.3017509453499136
+    expected: "Richmond upon Thames"
+  - lat: 54.69171484748276
+    lng: -1.2120948985416151
+    expected: "Hartlepool"
+  - lat: 52.393331976390584
+    lng: -0.7317085799875024
+    expected: "North Northamptonshire"
+  - lat: 51.51747366143488
+    lng: -0.08274801177567012
+    expected: "City of London"
+  - lat: 54.57934577198998
+    lng: -1.2345062034322505
+    expected: "Middlesbrough"
+  - lat: 54.570017811344975
+    lng: -1.3176121292749785
+    expected: "Stockton-on-Tees"
+  - lat: 52.241449635119125
+    lng: -3.3769023636525324
+    expected: "Powys"
+  - lat: 53.95794207970626
+    lng: -1.0934337543955344
+    expected: "York"
+  - lat: 51.461147896446754
+    lng: -0.008028872403544484
+    expected: "Lewisham"
+  - lat: 56.002476618887414
+    lng: -3.7850434315329418
+    expected: "Falkirk"
+  - lat: 51.127880996219126
+    lng: -2.990804261103443
+    expected: "Somerset"
+  - lat: 53.72670238162888
+    lng: -1.858056515655767
+    expected: "Calderdale"
+  - lat: 53.14191132363408
+    lng: -1.1991038806670935
+    expected: "Nottinghamshire"
+  - lat: 50.339564544881185
+    lng: -4.78930912754294
+    expected: "Cornwall"
+  - lat: 53.500598633556216
+    lng: -3.0008772799301444
+    expected: "Sefton"
+  - lat: 50.90723630443211
+    lng: -1.4133850683268305
+    expected: "Southampton"
+  - lat: 51.5903499216317
+    lng: -0.10292695728323653
+    expected: "Haringey"
+  - lat: 54.71858444046492
+    lng: -6.209123502039179
+    expected: "Antrim and Newtownabbey"
+  - lat: 53.40760639023562
+    lng: -2.977548067088185
+    expected: "Liverpool"
+  - lat: 55.55070442008025
+    lng: -2.838602808216475
+    expected: "Scottish Borders"
+  - lat: 55.00992533906255
+    lng: -1.5892155218399913
+    expected: "North Tyneside"
+  - lat: 53.75566778252862
+    lng: -2.7066239986792815
+    expected: "Lancashire"

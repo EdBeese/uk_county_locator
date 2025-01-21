@@ -1,0 +1,222 @@
+test_coordinates:
+  - lat: 51.42888269137655
+    lng: -0.16606029577316506
+    expected: "Greater London"
+  - lat: 53.482712637282674
+    lng: -2.2565591206788778
+    expected: "Greater Manchester"
+  - lat: 53.40387849855775
+    lng: -2.979736323214796
+    expected: "Merseyside"
+  - lat: 53.37803938706171
+    lng: -1.4714136866342367
+    expected: "South Yorkshire"
+  - lat: 54.9744775749628
+    lng: -1.6144241256960394
+    expected: "Tyne and Wear"
+  - lat: 52.48198627414244
+    lng: -1.8964436257094848
+    expected: "West Midlands"
+  - lat: 53.79544244177025
+    lng: -1.5449826997488858
+    expected: "West Yorkshire"
+  - lat: 54.23159436510364
+    lng: -1.3420782296535372
+    expected: "North Yorkshire"
+  - lat: 54.7758269857364
+    lng: -1.5771741758326574
+    expected: "County Durham"
+  - lat: 53.193621920777744
+    lng: -2.892773534948476
+    expected: "Cheshire"
+  - lat: 53.76231244074185
+    lng: -2.7056487023229714
+    expected: "Lancashire"
+  - lat: 53.76685942570555
+    lng: -0.3270944713366328
+    expected: "East Riding of Yorkshire"
+  - lat: 53.23070932708354
+    lng: -0.5413271013414402
+    expected: "Lincolnshire"
+  - lat: 52.92227968931957
+    lng: -1.4731457409584723
+    expected: "Derbyshire"
+  - lat: 52.67259934525514
+    lng: -0.7339480673274308
+    expected: "Rutland"
+  - lat: 52.95386949104359
+    lng: -1.1382568005566334
+    expected: "Nottinghamshire"
+  - lat: 51.128196682375304
+    lng: -3.003230624581017
+    expected: "Somerset"
+  - lat: 51.45176646166343
+    lng: -2.5950494559122963
+    expected: "Bristol"
+  - lat: 51.899375636044496
+    lng: -2.0998320024573873
+    expected: "Gloucestershire"
+  - lat: 50.72581727708886
+    lng: -3.5292064777943812
+    expected: "Devon"
+  - lat: 50.71541376513457
+    lng: -1.9880619662805203
+    expected: "Dorset"
+  - lat: 52.19490760477489
+    lng: 0.1309376450938625
+    expected: "Cambridgeshire"
+  - lat: 52.13861206344053
+    lng: -0.46698332944759563
+    expected: "Bedfordshire"
+  - lat: 51.546427942389414
+    lng: 0.7013669580213506
+    expected: "Essex"
+  - lat: 51.26567815200955
+    lng: 0.5038442993332555
+    expected: "Kent"
+  - lat: 51.46230863760773
+    lng: -0.9801764871343671
+    expected: "Berkshire"
+  - lat: 50.86938054528024
+    lng: 0.025153470705639735
+    expected: "East Sussex"
+  - lat: 50.80344208064459
+    lng: -1.0527579871648367
+    expected: "Hampshire"
+  - lat: 51.70374305325371
+    lng: -0.6131691950627137
+    expected: "Buckinghamshire"
+  - lat: 54.89159951758025
+    lng: -2.933705150325154
+    expected: "Cumbria"
+  - lat: 51.65239320206754
+    lng: -0.39946177363306035
+    expected: "Hertfordshire"
+  - lat: 52.63666947066247
+    lng: -1.1388831715637289
+    expected: "Leicestershire"
+  - lat: 52.75151482676721
+    lng: 0.40684926198580706
+    expected: "Norfolk"
+  - lat: 52.2376827848263
+    lng: -0.8999026773130897
+    expected: "Northamptonshire"
+  - lat: 51.751507660195614
+    lng: -1.258063503860091
+    expected: "Oxfordshire"
+  - lat: 53.012829745912086
+    lng: -2.2343471134123525
+    expected: "Staffordshire"
+  - lat: 52.170995173132305
+    lng: 1.019160739883695
+    expected: "Suffolk"
+  - lat: 51.230870042229135
+    lng: -0.3292825951093863
+    expected: "Surrey"
+  - lat: 52.27834583482665
+    lng: -1.5880712066772291
+    expected: "Warwickshire"
+  - lat: 50.83180001622784
+    lng: -0.4016525844738102
+    expected: "West Sussex"
+  - lat: 52.19574568778817
+    lng: -2.2274953481776376
+    expected: "Worcestershire"
+  - lat: 52.77392217355013
+    lng: -2.714811001100937
+    expected: "Shropshire"
+  - lat: 50.166539213404874
+    lng: -5.122713431373256
+    expected: "Cornwall"
+  - lat: 51.44567055993505
+    lng: -1.8577962981698457
+    expected: "Wiltshire"
+  - lat: 50.70069410304488
+    lng: -1.288954390887693
+    expected: "Isle of Wight"
+  - lat: 55.410123003333034
+    lng: -1.6993685728895547
+    expected: "Northumberland"
+  - lat: 52.056625427499306
+    lng: -2.713844243971597
+    expected: "Herefordshire"
+  - lat: 57.44009858445254
+    lng: -2.699516731117865
+    expected: "Grampian"
+  - lat: 56.39494288905226
+    lng: -3.4259942933777214
+    expected: "Tayside"
+  - lat: 55.86241593161616
+    lng: -4.255209302266189
+    expected: "Strathclyde"
+  - lat: 56.11648474376661
+    lng: -3.9370260823923133
+    expected: "Central (Scotland)"
+  - lat: 54.96798616502673
+    lng: -4.374700996536015
+    expected: "Dumfries and Galloway"
+  - lat: 55.94558166048993
+    lng: -3.2052225752771912
+    expected: "Lothian"
+  - lat: 57.9982825348489
+    lng: -6.877061588968986
+    expected: "Eilean Siar (Western Isles)"
+  - lat: 56.204237241363614
+    lng: -3.1614600130363315
+    expected: "Fife"
+  - lat: 57.47763852660106
+    lng: -4.22219349119377
+    expected: "Highland"
+  - lat: 58.935313660069745
+    lng: -2.7408269850157776
+    expected: "Orkney Islands"
+  - lat: 55.55069523136263
+    lng: -2.8384424388657514
+    expected: "Scottish Borders"
+  - lat: 60.265496702380084
+    lng: -1.3620839915942673
+    expected: "Shetland Islands"
+  - lat: 53.226460590771744
+    lng: -4.138071760108193
+    expected: "Gwynedd"
+  - lat: 53.3191813407826
+    lng: -3.4914220654208585
+    expected: "Clwyd"
+  - lat: 52.51305770369782
+    lng: -3.318812889751468
+    expected: "Powys"
+  - lat: 51.7965305244751
+    lng: -4.7534985144426
+    expected: "Dyfed"
+  - lat: 51.59449450195962
+    lng: -3.7803833807581655
+    expected: "West Glamorgan"
+  - lat: 51.743286781683096
+    lng: -3.3719403144475755
+    expected: "Mid Glamorgan"
+  - lat: 51.48370952740465
+    lng: -3.1683771964745544
+    expected: "South Glamorgan"
+  - lat: 51.58437153253073
+    lng: -2.9975909964660294
+    expected: "Gwent"
+  - lat: 54.5975489457421
+    lng: -7.309069509520457
+    expected: "County Tyrone"
+  - lat: 54.350300890527315
+    lng: -6.6529392836418
+    expected: "County Armagh"
+  - lat: 54.32924094005713
+    lng: -5.725068520842893
+    expected: "County Down"
+  - lat: 54.99666609997586
+    lng: -7.309623817077512
+    expected: "County Londonderry"
+  - lat: 54.59688010935438
+    lng: -5.930218953359175
+    expected: "County Antrim"
+  - lat: 54.34356026375631
+    lng: -7.630844797160112
+    expected: "County Fermanagh"
+
+  
