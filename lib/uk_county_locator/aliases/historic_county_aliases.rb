@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module UkCountyLocator
-  module Polygons
+  module Aliases
     # rubocop:disable Metrics/ModuleLength
     module HistoricCountyAliases
       HISTORIC_COUNTY_ALIASES = {

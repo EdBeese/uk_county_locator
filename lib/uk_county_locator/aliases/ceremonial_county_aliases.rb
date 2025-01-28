@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module UkCountyLocator
-  module Polygons
+  module Aliases
     module CeremonialCountyAliases
       CEREMONIAL_COUNTY_ALIASES = {
         'London' => 'Greater London',
