@@ -116,6 +116,9 @@ test_coordinates:
   - lat: 51.57163726137343
     lng: -2.441698933930796
     expected: "South Gloucestershire"
+  - lat: 51.86438275252479
+    lng: -2.230345529840475
+    expected: "Gloucestershire"
   - lat: 53.04282829097902
     lng: -2.993575483901019
     expected: "Wrexham"

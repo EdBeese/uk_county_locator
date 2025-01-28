@@ -37,8 +37,6 @@ module UkCountyLocator
         find_county_within(ceremonial_county_polygons)
       when :historic
         find_county_within(historic_county_polygons)
-      else
-        raise ArgumentError, 'Invalid input: type must be one of :current, :ceremonial, or :historic.'
       end
     end
 
