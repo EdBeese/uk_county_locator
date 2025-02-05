@@ -25,6 +25,10 @@ module UkCountyLocator
       nil
     end
 
+    def county_list
+      fetch_county_polygons.keys.sort
+    end
+
     private
 
     def fetch_county_polygons
@@ -51,15 +55,14 @@ module UkCountyLocator
 
     def current_county_and_unitary_authority_polygons
       Polygons::CurrentCountyAndUnitaryAuthorityPolygons::CURRENT_COUNTY_AND_UNITARY_AUTHORITY_POLYGONS
-        .transform_keys(&:downcase)
     end
 
     def ceremonial_county_polygons
-      Polygons::CeremonialCountyPolygons::CEREMONIAL_COUNTY_POLYGONS.transform_keys(&:downcase)
+      Polygons::CeremonialCountyPolygons::CEREMONIAL_COUNTY_POLYGONS
     end
 
     def historic_county_polygons
-      Polygons::HistoricCountyPolygons::HISTORIC_COUNTY_POLYGONS.transform_keys(&:downcase)
+      Polygons::HistoricCountyPolygons::HISTORIC_COUNTY_POLYGONS
     end
 
     def current_county_and_unitary_authority_aliases
