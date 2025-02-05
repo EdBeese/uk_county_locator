@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
   # Uncomment to register a new dependency of your gem
   spec.add_dependency 'geokit', '>= 1.0', '< 2.0'
   spec.add_dependency 'parallel', '>= 1.0', '< 2.0'
-  spec.add_dependency 'polylines', '>= 0.3', '< 1.0'
+  spec.add_dependency 'polylines', '>= 0.1.1', '< 1.0'
 
   # spec.add_development_dependency 'pry', '~> 0.14.1'
 
