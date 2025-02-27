@@ -10,3 +10,8 @@ gem 'rake', '~> 13.0'
 gem 'rspec', '~> 3.0'
 
 gem 'rubocop', '~> 1.21'
+
+group :development, :test do
+  gem 'appraisal'
+  gem 'pry', '~> 0.14.1'
+end
