@@ -34,11 +34,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency 'geokit', '>= 1.0', '< 2.0'
-  spec.add_dependency 'parallel', '>= 1.0', '< 2.0'
+  spec.add_dependency 'geokit', '>= 1.0', '< 3.0'
+  spec.add_dependency 'parallel', '>= 1.0', '< 3.0'
   spec.add_dependency 'polylines', '>= 0.1.1', '< 1.0'
-
-  # spec.add_development_dependency 'pry', '~> 0.14.1'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
