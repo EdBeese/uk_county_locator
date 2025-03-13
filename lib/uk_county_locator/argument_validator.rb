@@ -10,15 +10,16 @@ module UkCountyLocator
     def initialize(request:, type:, lat: nil, lng: nil, county: nil)
       @request = request
       @type = verified_type(type)
-      @lat = parse_coordinate(lat, 'lat') if lat
-      @lng = parse_coordinate(lng, 'lat') if lat
-      @county = validated_county(county) if county
+      @lat = parse_coordinate(lat, 'lat') if @request == :county
+      @lng = parse_coordinate(lng, 'lat') if @request == :county
+      @county = validated_county(county) if @request == :polygon
     end
 
     private
 
     def verified_type(type)
       type = type&.downcase&.to_sym
+      return :ceremonial if type.nil?
       return type if valid_county_type?(type)
 
       raise InvalidArgumentError, "Invalid input: type must be one of :current, :ceremonial, :historic.#{all_message}"\
