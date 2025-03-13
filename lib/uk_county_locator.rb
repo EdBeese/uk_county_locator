@@ -22,13 +22,13 @@ module UkCountyLocator
   end
 
   def self.find_polygon(county:, type: :ceremonial)
-    validated_params = ArgumentValidator.new(request: :data, type: type, county: county)
+    validated_params = ArgumentValidator.new(request: :polygon, type: type, county: county)
 
     PolygonFetcher.new(type: validated_params.type).county_polygon(county)
   end
 
   def self.county_list(type: :ceremonial)
-    validated_params = ArgumentValidator.new(request: :data, type: type)
+    validated_params = ArgumentValidator.new(request: :list, type: type)
 
     PolygonFetcher.new(type: validated_params.type).county_list
   end

@@ -65,11 +65,72 @@ puts polygon # => "iah@mrgyHs@tTkk@zc@jz@h{@kLnr@jo@rWal@}Rrk@za@UjMdhAb_@t|Bjn@
 
 The gem will support a number of common aliases for county names, in as far as is feasible, including shorthand abbreviations, such as 'Herts', 'Beds' and 'Bucks', as well as Welsh, Irish and Scots Gaelic languages, and more subtle alternative names.
 
+```ruby
+polygon = UkCountyLocator.find_polygon(county: 'Londonderry', type: :ceremonial)
+puts polygon # => "lhhk@geboIEHA?????_eAtQi`CtL}_..."
+
+polygon = UkCountyLocator.find_polygon(county: 'Derry', type: :ceremonial)
+puts polygon # => "lhhk@geboIEHA?????_eAtQi`CtL}_..."
+
+polygon = UkCountyLocator.find_polygon(county: 'derry', type: :ceremonial)
+puts polygon # => "lhhk@geboIEHA?????_eAtQi`CtL}_..."
+
+polygon = UkCountyLocator.find_polygon(county: 'Co Derry', type: :ceremonial)
+puts polygon # => "lhhk@geboIEHA?????_eAtQi`CtL}_..."
+
+polygon = UkCountyLocator.find_polygon(county: 'Contae Dhoire', type: :ceremonial)
+puts polygon # => "lhhk@geboIEHA?????_eAtQi`CtL}_..."
+```
+
 #### Fetching the County List
 
 It is also possible to fetch the list of counties, per type (alphabetised):
 ```ruby
 county_list = UkCountyLocator.county_list(type: :ceremonial)
+puts county_list # => ["Bedfordshire", "Berkshire", "Bristol", "Buckinghamshire", "Cambridgeshire", ...]
+```
+
+## Errors & Rescues
+The gem is able to sanitize data inputs to a point, and where invalid arguments are passed in, it is designed to error loudly.
+
+For example, string numeric values can be passed in:
+```ruby
+county = UkCountyLocator.find_county(lat: '51.5074', lng: '-0.1278')
+puts county # => "Greater London"
+
+county = UkCountyLocator.find_county(lat: 'foo', lng: 'bar')
+# => UkCountyLocator::InvalidArgumentError (Invalid lat format: 'foo')
+
+county = UkCountyLocator.find_county(lat: :foo, lng: :bar)
+# => UkCountyLocator::InvalidArgumentError (Expected lat to be Numeric or a String, got Symbol)
+
+county = UkCountyLocator.find_county(lat: nil, lng: nil)
+# => UkCountyLocator::InvalidArgumentError (Expected lat to be Numeric or a String, got NilClass)
+
+county = UkCountyLocator.find_county(lat: 51.5074, lng: -0.1278, type: 'Ceremonial')
+puts county # => "Greater London"
+
+county = UkCountyLocator.find_county(lat: 51.5074, lng: -0.1278, type: :postal)
+# => UkCountyLocator::InvalidArgumentError (Invalid input: type must be one of :current, :ceremonial, :historic., or :all, got postal)
+
+polygon = UkCountyLocator.find_polygon(county: 123)
+# => UkCountyLocator::InvalidArgumentError (Expected county to be a String, got Integer)
+
+polygon = UkCountyLocator.find_polygon(county: nil)
+# => UkCountyLocator::InvalidArgumentError (Expected county to be a String, got NilClass)
+
+county_list = UkCountyLocator.county_list(type: 'foo')
+# => UkCountyLocator::InvalidArgumentError (Invalid input: type must be one of :current, :ceremonial, :historic., got foo)
+```
+Note that the gem will infer the `:ceremonial` `:type` if an explicit `nil` value passed in:
+```ruby
+county = UkCountyLocator.find_county(lat: 51.5074, lng: -0.1278, type: nil)
+puts county # => "Greater London"
+
+polygon = UkCountyLocator.find_polygon(county: 'Greater London', type: nil)
+puts polygon # => "iah@mrgyHs@tTkk@zc@jz@h{@kLnr@jo@rWal@}Rrk@za@UjMdhAb_@t|Bjn@`h@|mAzs@kMl\\h..."
+
+county_list = UkCountyLocator.county_list(type: nil)
 puts county_list # => ["Bedfordshire", "Berkshire", "Bristol", "Buckinghamshire", "Cambridgeshire", ...]
 ```
 
@@ -124,7 +185,7 @@ See image of Orkney Islands polygon:
 
 
 ### Rivers, Tributaries and Coastal Lines
-In order to compress the polygon areas, the boundaries that cover coastal lines have been more roughly drawn, with fewer coordinate points.  The polygons are continuous where larger rivers and tributaries, where the same county on both sides.  This means that coordinates that fall in the river will return the county as a result.
+In order to compress the polygon areas, the boundaries that cover coastal lines have been more roughly drawn, with fewer coordinate points.  The polygons are continuous where larger rivers and tributaries cut into a county area that falls on both sides of said river.  This means that coordinates that fall in the river will return the county as a result.
 
 For example, coordinates that fall within the river Thames, where Greater London is on both sides of the river, will return 'Greater London' as the ceremonial county.
 

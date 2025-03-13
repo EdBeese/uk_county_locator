@@ -8,6 +8,7 @@ vendor/bundle/
 /spec/reports/
 /tmp/
 gemfiles/
+*.gem
 
 # rspec failure tracking
 .rspec_status
