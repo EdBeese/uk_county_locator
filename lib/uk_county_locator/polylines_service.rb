@@ -3,6 +3,7 @@
 require 'polylines'
 require 'geokit'
 require 'parallel'
+require 'rgeo'
 
 # PolylinesService handles the decoding of polygon polyline data and provides
 # functionality to check if a given point (latitude, longitude) lies within
@@ -10,22 +11,22 @@ require 'parallel'
 # polygons using parallel processing to improve performance.
 class PolylinesService
   def initialize(lat:, lng:)
-    @point = Geokit::LatLng.new(lat, lng)
+    @point = RGeo::Geos.factory.point(lng, lat)
   end
 
   def polygon_to_array(polygon:)
-    Polylines::Decoder.decode_polyline(polygon).map { |lng, lat| Geokit::LatLng.new(lat, lng) }
+    Polylines::Decoder.decode_polyline(polygon).map do |lng, lat|
+      RGeo::Geos.factory.point(lng, lat)
+    end
   end
 
-  def point_inside_polygon?(polygons)
+  def point_inside_polygon?(decoded_polygons)
     return nil if @point.nil?
 
-    result = Parallel.map(polygons, in_processes: 4) do |name, polygon|
-      geo_polygon = Geokit::Polygon.new(polygon_to_array(polygon: polygon))
+    decoded_polygons.find do |_name, data|
+      next unless data[:bbox].contains?(@point)
 
-      geo_polygon.contains?(@point) ? name : nil
-    end
-
-    result.compact.first
+      data[:polygon].contains?(@point)
+    end&.first
   end
 end

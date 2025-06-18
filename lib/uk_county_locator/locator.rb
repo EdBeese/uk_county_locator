@@ -49,15 +49,15 @@ module UkCountyLocator
     end
 
     def current_county_and_unitary_authority_polygons
-      Polygons::CurrentCountyAndUnitaryAuthorityPolygons::CURRENT_COUNTY_AND_UNITARY_AUTHORITY_POLYGONS
+      Polygons::CurrentCountyAndUnitaryAuthorityPolygons.decoded_polygons
     end
 
     def ceremonial_county_polygons
-      Polygons::CeremonialCountyPolygons::CEREMONIAL_COUNTY_POLYGONS
+      Polygons::CeremonialCountyPolygons.decoded_polygons
     end
 
     def historic_county_polygons
-      Polygons::HistoricCountyPolygons::HISTORIC_COUNTY_POLYGONS
+      Polygons::HistoricCountyPolygons.decoded_polygons
     end
   end
 end

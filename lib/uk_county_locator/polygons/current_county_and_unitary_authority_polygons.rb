@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
+require 'uk_county_locator/polygon_decoder'
+
 module UkCountyLocator
   module Polygons
     # rubocop:disable Metrics/ModuleLength
+    # Encoded Current County Polygons
     module CurrentCountyAndUnitaryAuthorityPolygons
       # rubocop:disable Layout/LineLength
       CURRENT_COUNTY_AND_UNITARY_AUTHORITY_POLYGONS = {
@@ -226,6 +229,11 @@ module UkCountyLocator
         'Lancashire' => 'js_N}c~iIiLog@hDyf@db@hT`q@bNtF`Jdl@t[jw@bOdd@dV~WtHz~@tJrZ?tUvF~y@n\\hXbOxTeAvq@lY`G~K~`@~P`b@lGrzAfLr^tF|ZqAhg@nHdWwGr^c@j|@tIvm@uDhhA}@`MuItnAw\\vHhItRhz@dRrUnX`T|c@fM~ItGxcAzUjLlJVzV|VhJlB~HeGjNjBrK|T|J|m@aT`VOdMjGdRyCt[bCr[oH|OfElyBkQyA}Epw@}EcCmXjCoDkAok@_JyQbu@uGjc@uItA{I`WhFbsAvIrNW|t@sSlNM~h@_VrIjAdf@iQYuEh\\kDpPtC`XtRfPi@vKzKx_@lL_MhR_AnPj^fRp}@tJrs@~\\~Ka@CjnAoyCjbDlTjaFvhKfrChjHhpG_tHvaL`pa@niGki@xaHgpB|E{Zfa@sk@`CzQtY]fOmRbU{]vm@rBbIzP`Dg@dRcOdNb`@vK{GvUmOsAhD}PcJaAes@xo@~HxNd[rGmS|NsB|I{h@lHkBzF_XhQcSdBsIbOlHrDoPzi@k`@fd@zPvIkOfJgUj]~k@Zvu@eCpKbMnOzDBvSjLc@u{@pqAdqAnA|e@wCfpAtKbXko@l|Dh`@{rBzfGukOzcEqZzY{CzCo@l@kElEqDt@d@tAk@j@k@j@cOhO_@`@cBdBQNiQjQzKrDnUzZeAbF{YfMyOdCoGbMz@dUdTx`@oNjFqQxQqJl[zLnMne@~O`LxJ`r@fx@mDvItZtT`Yba@t~Aj{@vy@{ZrNaIxj@rSnEpNnUxKzHtR|ZfNvAjK~L|Hla@vKjE`L~m@vXdXl[aFnLdHjl@dQbM_LpI_nA|GlDj{@fGjAw@fX|w@fBtt@hVdC|PoIdVhDnNcHpR~J`Zdb@~b@sOfPiXmDeEbQuSoCuSxIgVaJifAlSyPzFm@vL}ZnB{DdMqVt@_UzEuIjI{N|Awh@jTq^vEqx@te@aYcDmUiJqWiCqD}e@jTeNlW{j@~LsJtHyTtWoRkCyRu^uKwLhDm_@qBea@dLg\\eByXdJkPQee@~ScFjH}\\zEh@tG{]za@m^`KgBvLiPbLgiB~TwhBeBmP`Fs[hBxVxMtLrUd\\hToZtl@qg@xEar@|OmOv`@sa@|N_VhEkMoEky@kEoc@zPyB~KlElXytBjGwBcNyDmZyU{\\}AmLtOut@wE@q]{k@g_@mGiEgOo\\cMq^kDae@eK{Q{Xyw@kd@ql@zj@uWjb@yMh_@ow@nEyC_G{j@qMmVLil@{Mw`AkLgb@yVsWcCoRcNqH_g@P_XgJo@lXy_@{S}R_Y_QqDsUyNmIaCgNqM{NyAiRbe@{GrD}KfZuWrJ_PaIsMbKkIaRuGoBoTeOmEaYeWw\\yBPwN}[mH_TfJgFiMqH}e@yL_c@qSpBmo@gHas@iAuWdIea@f@{f@mGsLyFcb@sGwa@Eoi@iEqNjEThVeDrUySrPb@bJoMdIce@yBaNsH{KqYXaMgm@iY{RaB_MwIq^}@mI}IuXhEmk@vY{[tYdDdFwj@l`@_\\gDq{@wSeWea@{RsC_A}LoqAuTw`@gYugA{`@uaA}g@|T_Mt_@yF~ZudA_RwV|Iq]xKcTpTyPz@sWrSqZmMgHiU_]yGuVi[kAsLkM{D_l@fBiJeO}SbAyMno@kRrJfBlh@gH`TkJpLqP`N}FbQyYqF}FlHaMyWuQ|Cc^dW}R|TgC{EcQp[iItZ~FtIqLmEwHbGcb@vLmB|YyYsC_MfIsKaNgCc@gNeVuLwYgCkKuSZmKsQqRcVaGua@cB{`@|Ei\\qEwXd@_z@i\\gMgL}Oq@wH{Mi^wBm`@zE_nAcYuc@oF_Qed@oYHoRiIcUJg\\nRuJxAqj@v]J`Kgc@~]`Zb]kFb`@u\\nDma@h\\eGbOjOhOwJhc@eAvd@ye@|b@wF`m@`GzD}v@h_@ge@~OdHnNi]fTiV`CqP~IkR|XkY~WgE|Mwu@xWai@jAmWcAkg@hG`G`d@Z`d@gJ`XsP|Ys}@zKib@dBa@p^{K`Es{BrSepAgDe\\pBuYuZgWiF_I}Jwc@kX}ZtPCdN}I`UhIfON|NvKrGGlSqMfq@sa@n`@eDxL_KrDuTx]dEbI}KpU{X|GkBdIo_@d@wC~W{MkHiQfH{c@sIsOm@~KmYzAyUtKsJ`GsUlIc{@zLuH{AqIvLuFk@uQiUgV}OsEeHgNop@aN}\\iUyPiTcy@yT{ToJ}i@cJs[dIkW@mRrWsm@|YkAvVqMlCzCvJym@fMsCpEeb@xIcJzF{k@m@kGnNjNhBcRj\\x]nMiuCuRuCgj@jRiVn@cPuv@gz@iHa[{]_c@{A}m@iJm@nJ_VuPkg@bk@yPlu@gNdHwHiBc_@~AaQdSkQtEwSh_@yUeMaMfUoU{JwLk\\gOiPqTgo@_N_BuIiUHaV|EyDiGoVeJwPk\\dCmVuOgI{ZmHyRgNcJcS|KuToHk^lC{PmCsM|Fge@`VgNhGkSwc@m^wRcEcNkJ|CwIdXkKqJuQMwUqHsFmvA{e@iz@oU_g@yRgXmHym@q[g`AmQiqAyXqxAgWqJsy@rEieAjeBmw@hg@oBph@uSjE_Vn[iStk@Qm^mQuJuO`]s^tZ}KxReMvJeRpl@mPnBwF|z@ulAub@mTpMqEvOiTzLyF_IqIlUoJt^I|Pu[u@_Ghc@w@zK{Qlo@kJjJpOjReDri@sQh_@jNjPcI`SpGpC}SeKoFlNqPfn@aRvf@tNvXq@~IoFvI}VoNk_@uMGSoMpRgJ_A{HnYqPzc@am@fLia@l@yNz[mBlEfMj_@fInPrStTcBdGsIte@tHj]xM|A}d@`Pn@fHwRrJsEeXoTe[iHcKaHxNmE~Qz@fS}Rf{AnDjL`JdfFl]xcAyEhUwK_LiT|SwDlZeRvb@aSbXiDfYeUrA{Hjq@[ji@rTrMeGlWjMja@kPjj@mNpFox@oF_h@cKeJaRjNq[`EmT?~Xit@bMoD~fAuD{CwMbWuQqDaKzLgDf@qKuOuNfTyOaD}TpMkLsLsBljAss@t_AfHbP|Mjn@|JnMsDhi@rCtItDpv@hBpq@bHrSnNdj@{T|pAiBt]dHbq@^zk@uTnUaMdE_\\qHeXk^we@bIqaA{FeUxf@_Gt}@cv@db@hBrKuJvRwBfE}NztA_IhN}DxCwQ|l@~@hs@y@dFuViIqD|WePdq@_GiBo[xs@o[zGeIcHoJzHiFzi@wOpWOnf@_L?cPvF}EyRgTtEgM`A_v@eIiIsSgCaBkh@xXmByEeOyq@kBu^dA}U_Zci@|E}T{I{W{e@vDmKwEaNae@uNuCqNsj@gXgUuD{eEwqCaAoMsWmb@wDqTeLqNox@qf@'
       }.freeze
       # rubocop:enable Layout/LineLength
+
+      def self.decoded_polygons
+        @decoded_polygons ||=
+          UkCountyLocator::PolygonDecoder.decoded_county_polygons(CURRENT_COUNTY_AND_UNITARY_AUTHORITY_POLYGONS).freeze
+      end
     end
     # rubocop:enable Metrics/ModuleLength
   end
