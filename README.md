@@ -200,10 +200,6 @@ The data to compile these polygon areas has been taken from a number of sources,
 - [UK Ceremonial Counties](https://github.com/evansd/uk-ceremonial-counties/blob/master/uk-ceremonial-counties.geojson)
 - [The Association of British Counties](https://abcounties.com/)
 
-## Performance Optimization
-
-The gem utilizes the `Parallel` gem to speed up polygon lookups.
-
 ## Compatibility
 
 The gem is tested against multiple versions of Rails using Appraisal, ensuring broad compatibility with different Ruby on Rails applications.
