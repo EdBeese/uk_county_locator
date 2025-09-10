@@ -41,7 +41,7 @@ module UkCountyLocator
     end
 
     def find_county_within(polygons)
-      polylines_service.point_inside_polygon?(polygons)
+      polylines_service.located_county(polygons)
     end
 
     def polylines_service
