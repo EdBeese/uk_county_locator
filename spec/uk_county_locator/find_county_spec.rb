@@ -64,6 +64,12 @@ RSpec.describe UkCountyLocator do
       end
     end
 
+    context 'when coordinates do not fall in any county' do
+      it 'returns nil' do
+        expect(UkCountyLocator.find_county(lat: 0.0, lng: 0.0)).to eq(nil)
+      end
+    end
+
     describe 'Ceremonial County Locator' do
       let(:coordinates) do
         YAML.load_file(File.join(__dir__, '../fixtures/ceremonial_county_test_coordinates.yml'))['test_coordinates']
